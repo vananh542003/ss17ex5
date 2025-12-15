@@ -1,0 +1,126 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  width: 400px;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.title {
+  background: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+  margin: -40px -40px 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+.submit-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin: 20px 0;
+  transition: background 0.3s;
+}
+.submit-btn:hover {
+  background: #c0392b;
+}
+.or {
+  margin: 20px 0;
+  color: #3498db;
+  font-weight: 600;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+.social a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.fb { background: #3b5998; }
+.tw { background: #1da1f2; }
+.gg { background: #db4437; }
+.links {
+  margin-top: 20px;
+}
+.links a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+footer {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
